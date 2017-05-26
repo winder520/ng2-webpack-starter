@@ -1,0 +1,7 @@
+{
+  "casClientService": "http://client.cas.dev.kopbit.com/",
+  "host": "http://api.ide.dev.kopbit.com/",
+  "image_store": "http://kop-res1.oss-cn-hangzhou.aliyuncs.com/",
+  "projectId": "0d53a530-ec3b-11e6-9139-bf7afb356889",
+  "ontologyIRI": "http://www.kopbit.com/20170112164702/DWExample1486699835313"
+}

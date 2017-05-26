@@ -1,0 +1,73 @@
+<div class="kop-header" id="split4-top-tab">
+    <div class="kop-ico"></div>
+    <!--<a href="javascript:void(0);">
+        <div class="kop-new-project" (click)="createProject()">
+        </div>
+    </a>-->
+    <div class="kop-follow-url" (click)="showFollowContent()">
+        <div></div>
+    </div>
+    <a href="javascript:void(0);">
+        <div class="kop-notify-message-icon" ng-class="{'kop-notify-message-tip-icon':hasNewNotifyMessage}" (click)="showNotifyMessage()"></div>
+    </a>
+    <div class="split-line">
+    </div>
+    <a [routerLink]="user-dashboard">
+        <div class="kop-go-back-home"></div>
+    </a>
+    <div class="dropdown">
+        <div class="kop-user" data-toggle="dropdown" id="kop-user-menu" aria-expanded="false">
+            <div class="kop-circle" ng-show="!userInfo.isPortalUrl"><a href="#" ng-bind="userInfo.shortName" class="ng-binding">W</a></div>
+            <div class="kop-circle-img ng-hide" ng-show="userInfo.isPortalUrl">
+                <a href="#"><img src="" width="35px" height="35px"></a>
+            </div>
+        </div>
+        <ul class="dropdown-menu user-dropdown-menu" uib-dropdown-menuaria-labelledby="kop-user-menu">
+            <li class="personal-name">
+                <div>
+                    <div class="personal-photo ng-binding" ng-bind="userInfo.shortName" ng-show="!userInfo.isPortalUrl">W</div>
+                    <div class="persoal-photo-img ng-hide" ng-show="userInfo.isPortalUrl">
+                        <img ng-src="" onerror="angular.element(this).scope().getUserPortalImageError(this)" width="35px" height="35px">
+                    </div>
+                    <div class="personal-email ng-binding" ng-bind="userInfo.email">winder@kopbit.com</div>
+                    <div class="personal-nickname ng-binding" ng-bind="userInfo.nickName">winder</div>
+                </div>
+            </li>
+            <hr class="user-menu-hr">
+            <li (click)="openUserCenter()" class="personal-pop-menu user-menu-li">
+                <div class="icon">
+
+                </div>
+                <div class="text">
+                    个人中心
+                </div>
+            </li>
+            <li class="password-pop-menu user-menu-li" (click)="openPassword()">
+                <div class="icon">
+
+                </div>
+                <div class="text">
+                    密码修改
+                </div>
+            </li>
+            <li class="name-pop-menu user-menu-li" (click)="settingNamepsace()">
+                <div class="icon">
+
+                </div>
+                <div class="text">
+                    名称空间设置
+                </div>
+            </li>
+            <hr class="user-menu-hr">
+            <li (click)="logout()" class="loginout-pop-menu user-menu-li">
+                <div class="icon">
+
+                </div>
+                <div class="text">
+                    退出
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="kop-logout" (click)="feedback()"><a href="#">反馈</a></div>
+</div>

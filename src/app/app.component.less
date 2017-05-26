@@ -1,0 +1,59 @@
+.notifyList {
+  position: absolute;
+  min-height: 40%;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,.26);
+  border-top: 1px solid rgba(0,0,0,.26);
+z-index: 1300;
+  .notifyTitle {
+    font-weight: bold;
+  }
+
+  .notifyheader {
+    border-bottom: 1px solid rgba(0,0,0,.26);
+    position: absolute;
+    top: 0;
+    width: 100%;
+
+    span {
+      margin-left: 10px;
+    }
+
+    .close {
+      margin-right: 10px;
+      margin-top: -3px;
+    }
+  }
+}
+
+.notify_list {
+  position: absolute;
+  top: 20px;
+  overflow-y: auto;
+  height: 100%;
+  left: 0;
+  width: 100%;
+  bottom: 0;
+
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      padding-left: 10px;
+      min-height: 20px;
+      line-height: 20px;
+
+      div {
+        float: left;
+        margin-left: 10px;
+        
+      }
+    }
+  }
+}

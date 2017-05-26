@@ -1,0 +1,23 @@
+<div (click)="onRootClick()" (mousedown)="onRootClick()">
+    <router-outlet></router-outlet>
+</div>
+<kop-notify></kop-notify>
+<div class="notifyList" *ngIf="notifyMessage.notifyListShow">
+    <div class="notifyheader">
+        <span>消息列表</span>
+        <button type="button" class="close" aria-label="Close" (click)="closeNotifyList()">
+    <span aria-hidden="true">&times;</span>
+    </button>
+    </div>
+   <div class="notify_list">
+        <ul>
+        <li *ngFor="let item of notifyMessage.notifyList;let i=index"
+         [ngClass]="{'bg-primary':item.notifyType=='primary','bg-success':item.notifyType=='success','bg-info':item.notifyType=='info','bg-warning':item.notifyType=='warning','bg-danger':item.notifyType=='error'}">
+            <div contenteditable="true" class="notifyTitle">{{i+1}}.{{item.message}}</div>
+            <div contenteditable="true"> {{item.details}}</div>&nbsp;
+            <div> {{item.notifyTime}}</div>
+        </li>
+    </ul>
+   </div>
+</div>
+<context-menu></context-menu>

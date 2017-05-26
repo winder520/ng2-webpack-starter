@@ -1,0 +1,220 @@
+@head-bar-height: 45px;
+
+@kop-logout-right: 0px;
+@kop-logout-width: 85px;
+
+@kop-user-right: 86px; // @kop-logout-right + @kop-logout-width + 1px;
+@kop-user-width: 65px;
+@kop-user-circle-diam: 35px;
+@kop-user-circle-margin-left: 15px; //(@kop-user-width - @kop-user-circle-diam)/2;
+@kop-user-circle-margin-top: 5px; // (@head-bar-height - @kop-user-circle-diam)/2;
+
+
+@kop-new-project-right: 167px; // @kop-user-right + @kop-user-width + 1px + @kop-user-circle-margin-left;
+@kop-new-project-width: 34px;
+@kop-new-project-height: 34px;
+@kop-new-project-margin-top: 5.5px; // (@head-bar-height - @kop-new-project-height) / 2;
+
+@kop-header-background-color: #109bef;
+@kop-header-font-size: 14px;
+@kop-header-font-family: 微软雅黑, serif;
+@kop-header-color: #ffffff;
+@kop-header-border-color: #2cb1eb;
+
+.kop-header {
+  background-color: @kop-header-background-color;
+  font-size: @kop-header-font-size;
+  font-family: @kop-header-font-family;
+  color: @kop-header-color;
+  width: 100%;
+  height: 100%;
+  a {
+    font-size: @kop-header-font-size;
+    color: @kop-header-color;
+    text-decoration: none
+  }
+
+  .kop-ico {
+    position: absolute;
+    background: url(@kop-logo);
+    left: 30px;
+    width: 150px;
+    height: 29px;
+    top: 10px;
+  }
+
+  .kop-new-project {
+    position: absolute;
+    right: @kop-new-project-right;
+    width: @kop-new-project-width;
+    height: @kop-new-project-height;
+    margin-top: @kop-new-project-margin-top;
+    background: url(@kop-new-project-icon);
+  }
+
+  .kop-logout {
+    position: absolute;
+    right: 0;
+    width: @kop-logout-width;
+    height: @head-bar-height;
+
+    a {
+      margin-top: 12px;
+      margin-left: 15px;
+      display: block;
+    }
+  }
+
+  .kop-user {
+    position: absolute;
+    right: @kop-user-right;
+    width: @kop-user-width;
+    height: @head-bar-height;
+    border-right: 1px solid #2cb0ea;
+    border-left: 1px solid #2cb0ea;
+    .kop-circle {
+      .kop-circle-fun(@kop-user-circle-diam, #5eb8fb);
+      margin-top: @kop-user-circle-margin-top;
+      margin-left: @kop-user-circle-margin-left;
+      text-align: center;
+      padding-top: 6px;
+    }
+    .kop-circle-img {
+      //margin-top: @kop-user-circle-margin-top;
+      //margin-left: @kop-user-circle-margin-left;
+      margin: 0 auto;
+      width: @kop-user-circle-diam;
+      height: 45px;
+      border-radius: 50%;
+      border: none;
+      //padding-top: 6px;
+      overflow: hidden;
+      a{
+        width: 45px;
+        height: 45px;
+        line-height: 35px;
+      }
+      img{
+        margin-top: 6px;
+        height: 35px;
+        width: 35px;
+        -moz-border-radius: 50%;
+        -webkit-border-radius: 50%;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  hr {
+    margin: 0;
+    border-top: 1px solid @kop-header-border-color;
+  }
+
+  .user-dropdown-menu {
+    position: relative;
+    width: 200px;
+    height: 255px;
+    top: 45px;
+    background-color: #FDFDFD;
+    right: 20px;
+    font-size: 12px;
+    float: right;
+    margin-right: 20px;
+    color: black;
+    .text {
+      float: left;
+      margin-left: 20px;
+    }
+  }
+  .user-dropdown-menu > li {
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    cursor: default;
+  }
+
+  .personal-pop-menu .icon {
+    position: relative;
+    float: left;
+    background: url(@kop-user-menu-personal);
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+    top: 8px;
+    float: left;
+  }
+  .password-pop-menu .icon {
+    position: relative;
+    float: left;
+    background: url(@kop-user-menu-password);
+    width: 12px;
+    height: 14px;
+    margin-left: 12px;
+    top: 8px;
+    float: left;
+  }
+  .name-pop-menu .icon {
+    position: relative;
+    float: left;
+    background: url(@kop-user-menu-name);
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+    top: 8px;
+    float: left;
+  }
+  .loginout-pop-menu .icon {
+    position: relative;
+    float: left;
+    background: url(@kop-user-menu-loginout);
+    width: 16px;
+    height: 16px;
+    margin-left: 10px;
+    top: 8px;
+    float: left;
+  }
+  .personal-name {
+    height: 100px !important;
+  }
+  .personal-photo {
+    height: 35px;
+    width: 35px;
+    margin: 0px auto;
+    border-radius: 50%;
+    background-color: #2cb0ea;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+    margin-top: 20px;
+  }
+
+  .persoal-photo-img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    margin: 0px auto;
+    overflow: hidden;
+    margin-top: 10px;
+  }
+
+  .personal-email {
+    height: 20px;
+    width: auto;
+    text-align: center;
+    margin-top: 10px;
+  }
+  .personal-nickname {
+    height: 20px;
+    width: auto;
+    text-align: center;
+    margin-top: 5px;
+    color: #5EB9FD;
+  }
+  .user-menu-hr {
+    border-top: 1px solid #E6E8EC;
+  }
+  .user-menu-li:hover {
+    background-color: #F5F6F8;
+  }
+}
