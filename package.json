@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "QuickStart package.json from the documentation, supplemented with testing support",
   "scripts": {
-    "start": "webpack-dev-server --inline --progress --port 4200 ",
+    "start": "webpack-dev-server --inline --progress --port 4300 ",
     "test": "karma start",
     "build": "rimraf dist && webpack --config config/webpack.prod.js --progress --profile --bail",
     "i18n": "ng-xi18n -p tsconfig.json"
@@ -26,7 +26,6 @@
     "@ng2-dynamic-forms/ui-bootstrap": "^1.4.0",
     "@types/linq": "^2.2.33",
     "bootstrap": "^3.3.7",
-    "codemirror": "^5.25.0",
     "core-js": "^2.4.1",
     "reflect-metadata": "^0.1.10",
     "rxjs": "^5.2.0",
