@@ -22,7 +22,7 @@
 > 5、用开发软件自带的终端（命令行） 输入
 `npm start`
 
-> 6、在浏览器中输入:http://localhost:4200/
+> 6、在浏览器中输入:http://localhost:4300/
 
 ## 测试环境相关配置
 
@@ -30,45 +30,5 @@
 
 > 2、在仿DOS窗口运行：`npm run test`
 
-## 开发的时候注意项
-
-> 1、在组件里面引用CSS（LESS）的时候用 `require` 导入：
-
-  ```js
-
-  require('./app.component.less')
-
-  @Component({
-    selector: 'app-root',
-    templateUrl: './app.component.html',
-    styleUrls: ['./app.component.less']
-  })
-  export class AppComponent implements OnInit {}
-  ```
-
-> 2、在CSS或HTML引用外部图片要用相对路径
-
-  ```CSS
-  .row {
-    margin: 0px;
-    padding: 0px;
-    height: 100%;
-    background: url('../assets/images/faces/ee_1.png')
-  }
-  ```
-
-  ```HTML
-  <img src="../assets/images/css-sprites/notify.png" class="chat-but">
-  ```
-
-> 3、图片格式请使用格式 jpg png gif
-
-> 4、在js（ts）里面不要直接使用图片地址的方式，打包不支持
-
-> 5、编写测试代码的时候文件名后缀以：组件（｜指令｜服务）.spec.ts 结尾
-
-
-#### 启动
-
-npm start
+> 3、正式环境打包：`npm run build`
 
