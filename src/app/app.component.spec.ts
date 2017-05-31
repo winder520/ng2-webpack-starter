@@ -16,7 +16,6 @@ import { RouterTestingModule, SpyNgModuleFactoryLoader } from '@angular/router/t
 import { AppModule } from './app.module';
 import { AppRoutingModule } from './app.routes';
 import { AppComponent } from './app.component';
-import { DocumentComponent } from './document/document.component';
 
 import { RouterLinkStubDirective } from '../testing';
 import { RouterOutletStubComponent } from '../testing';
@@ -33,7 +32,6 @@ describe('AppComponent & TestModule', () => {
     TestBed.configureTestingModule({
       declarations: [
         AppComponent,
-        DocumentComponent,
         RouterLinkStubDirective, RouterOutletStubComponent
       ],
       schemas:[CUSTOM_ELEMENTS_SCHEMA]

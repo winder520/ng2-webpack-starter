@@ -4,7 +4,6 @@ import { AppModule } from './app/app.module';
 
 import { SSO } from './lib/sso/sso';
 import { Util } from './lib/util/util';
-import { getTranslationProviders } from './i18n.providers';
 let serviceConfig = require('./configuration/service-configuration/service-configuration.json')
 //import serviceConfig from './configuration/service-configuration/service-configuration.json';
 

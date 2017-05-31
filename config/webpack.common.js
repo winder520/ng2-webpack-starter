@@ -47,7 +47,7 @@ module.exports = {
       exclude: helpers.root('src', 'app'),
       loader: ExtractTextPlugin.extract(
         {
-          fallbackLoader: "style-loader",
+          fallback: "style-loader",
            loader: "css-loader!less-loader?sourceMap"
           //loader: "less-loader?sourceMap"
         }
@@ -56,7 +56,7 @@ module.exports = {
       //处理全局样式
       test: /\.css$/,
       exclude: helpers.root('src', 'app'),
-      loader: ExtractTextPlugin.extract({ fallbackLoader: 'style-loader', loader: 'css-loader?sourceMap' })
+      loader: ExtractTextPlugin.extract({ fallback: 'style-loader', loader: 'css-loader?sourceMap' })
     }, {
       //处理组件内样式
       test: /\.css$/,

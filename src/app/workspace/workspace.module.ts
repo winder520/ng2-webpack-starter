@@ -1,6 +1,7 @@
 import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 import { CommonModule } from '@angular/common';
+import { WorkspaceRoutingModule } from "./workspace.routes";
 
 
 
@@ -12,7 +13,7 @@ import { CommonModule } from '@angular/common';
 
     imports: [
         CommonModule,
-        WordspaceRoutingModule
+        WorkspaceRoutingModule
     ],
 
     exports: [],
