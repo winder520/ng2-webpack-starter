@@ -6,6 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app.routes';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
+import { WelcomeComponent } from "./welcome.component";
 
 @NgModule({
     imports: [
@@ -16,8 +17,8 @@ import { SharedModule } from './shared/shared.module';
         FormsModule
     ],
     declarations: [
-        AppComponent
-        // SparqlComponent
+        AppComponent,
+        WelcomeComponent
     ],
     bootstrap: [AppComponent],
     providers: [
