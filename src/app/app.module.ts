@@ -6,7 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app.routes';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
-import { WelcomeComponent } from "./welcome.component";
+import { WelcomeComponent } from "./main/welcome.component";
 
 @NgModule({
     imports: [
