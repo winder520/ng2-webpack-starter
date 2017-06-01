@@ -6,7 +6,8 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app.routes';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
-import { WelcomeComponent } from "./main/welcome.component";
+import { HomeComponent } from "./home/home.component";
+
 
 @NgModule({
     imports: [
@@ -18,7 +19,7 @@ import { WelcomeComponent } from "./main/welcome.component";
     ],
     declarations: [
         AppComponent,
-        WelcomeComponent
+        HomeComponent
     ],
     bootstrap: [AppComponent],
     providers: [

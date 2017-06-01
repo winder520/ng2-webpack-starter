@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { PreloadSelectedModules } from './app-preload-strategy';
-import { WelcomeComponent } from "./main/welcome.component";
+import { HomeComponent } from "./home/home.component";
 let appRoutes: Routes = [
     {
         path: '',
         //redirectTo: 'document',
-        component: WelcomeComponent,
+        component: HomeComponent,
         pathMatch: 'full'
     },
     {
