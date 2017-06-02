@@ -4,6 +4,7 @@ import { CommonModule } from '@angular/common';
 import { AccountRoutingModule } from "./account.routes";
 import { LoginComponent } from "./login.component";
 import { RegisterComponent } from "./register.component";
+import { UserDetailComponent } from "./user-detail.component";
 
 
 
@@ -20,7 +21,7 @@ import { RegisterComponent } from "./register.component";
 
     exports: [],
 
-    declarations: [LoginComponent, RegisterComponent],
+    declarations: [LoginComponent, RegisterComponent, UserDetailComponent],
 
     providers: [
 

@@ -7,6 +7,7 @@ import { AppRoutingModule } from './app.routes';
 import { AppComponent } from './app.component';
 import { SharedModule } from './shared/shared.module';
 import { HomeComponent } from "./home/home.component";
+import { AuthGuardService } from "./shared/services/auth-guard.service";
 
 
 @NgModule({
